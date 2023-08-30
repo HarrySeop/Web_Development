@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Gothic+A1:wght@500&family=Hahmlet&family=Nanum+Pen+Script&display=swap');
+/*구글폰트를 이용해서 import방법으로 폰트들을 스타일에 선언해줬습니다.*/
+#box{ /*지원서의 테두리를 만들었습니다.*/
+    width: 520px;
+    /*너비를 520px 로 설정했습니다.*/
+    border: 1px solid #80b3ff;
+    /*테두리를 1px로 설정하고 컬러코드는 교수님이 알려주신 사이트를 
+    이용해서 제가 좋아하는 색으로 했습니다.*/
+    padding: 20px 40px;
+    /*지원서 여백으로 상하 20px, 좌우 40px로 설정했습니다.*/
+    border-radius: 20px;
+    /*지원서가 이뻐 보이기 위해 테두리를 둥굴게 설정했습니다.*/
+    margin: 0 auto;
+    /*지원서를 잘 보이게 하기위해 가로 중앙에 정렬 해뒀습니다.*/
+}
+hr{
+    background-color: #80b3ff;
+    /*지원서의 테두리랑 같게 하기위해 위 같은 색상값을 설정했습니다.*/
+    height: 1px;
+    /*기존 hr 처럼 사용하기 위해 높이값을 1로 설정했습니다.*/
+    border: 0;
+    /*테두리를 제거한 뒤 그냥 줄로만 사용했습니다.*/
+}
+#jobs{
+    padding-left: 40px;
+    /*지원 분야라는 큰 틀에서 선택사항 3개를 테이블에 넣어서 들여쓰기 했습니다
+     왼쪽에서 40px만큼 들여쓰기 했습니다.*/
+    font-family: 'Hahmlet', serif;
+    /*import문을 이용해 가져온 'Hahmlet'체로 바꿔 줬습니다. 오류가 날경우 serif 체로 변경하도록 했습니다.*/
+}
+#Privacy{
+    padding-left: 35px;
+    /*#job와 같이 이름, 연락처를 넣은 테이블을 들여쓰기 왼쪽에서 35px만큼 들여쓰기 했습니다.*/
+}
+p{
+    font-family: 'Gamja Flower', cursive;
+    /*import문을 이용해 가져온 'Gamja Flower'체로 바꿔 줬습니다. 오류가 날경우 serif 체로 변경하도록 했습니다.*/
+    font-size: 20px;
+    /*제묵 밑에 지원서의 내용 부분이라 글씨를 20px 사이즈로 변경했습니다.*/
+}
+#application{
+    font-family: 'Gothic A1', sans-serif;
+    /*import문을 이용해 가져온 'Gothic A1'체로 바꿔 줬습니다. 오류가 날경우 serif 체로 변경하도록 했습니다.*/
+    font-size: 40px;
+    /*제목인만큼 크기를 40px로 강조했습니다. 구글폰트에서 Regular 400 대신 Medium 500으로 가져왔습니다.*/
+    text-align: center;
+    /*지원서 제목 내용을 가운데 정렬로 설정했습니다.*/
+}
+::placeholder{
+    font-family: 'Nanum Pen Script', cursive;
+    /*import문을 이용해 가져온 'Nanum Pen Script'체로 바꿔 줬습니다. 오류가 날경우 serif 체로 변경하도록 했습니다.*/
+    font-size: 20px;
+    /*placeholder의 글씨 크기가 너무 작아서 20px로 수정해줬습니다.*/
+}

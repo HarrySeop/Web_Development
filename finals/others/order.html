@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title> 주문서 작성하기</title>
+    <link href="./order.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container">
+        <div class="box">
+            <img id="reserve" src="리저브.jpg" alt="리저브">
+        </div>
+		<form>
+			<fieldset>
+				<legend>개인 정보</legend>
+				<ul>
+					<li>
+						<label for="uname" class="title">이름</label>
+						<input type="text" id="uname" required>
+					</li>
+					<li>
+						<label for="tel1" class="title">연락처</label>
+						<input type="tel" id="tel1">
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>배송지 정보</legend>
+				<ul>
+					<li>
+						<label for="addr" class="title">주소</label>
+						<input type="text" size="40" id="addr" required>
+					</li>
+					<li>
+						<label for="tel2" class="title">전화번호</label>
+						<input type="tel" size="40" id="tel2" required>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>주문 정보</legend>
+				<ul>
+					<li>
+						<label><input type="checkbox">선드라이드 파푸아뉴기니 율리아 (100g) </label>
+						<label><input type="number" value="0" min="0" max="5">개 </label>
+					</li>
+					<li>
+						<label><input type="checkbox">수마트라 마운트 가당 (100g) </label>
+						<label><input type="number" value="0" min="0" max="5">개 </label>
+					</li>
+					<li>
+						<label><input type="checkbox">콜롬비아 피탈리토 핑크 버본 (100g) </label>
+						<label><input type="number" value="0" min="0" max="5">개 </label>
+					</li>
+                    <li>
+						<label><input type="checkbox">코스타리카 허니 프로세스 (100g) </label>
+						<label><input type="number" value="0" min="0" max="5">개 </label>
+					</li>
+                    <li>
+						<label><input type="checkbox">케냐 티리크와 가쿠유이니 (100g) </label>
+						<label><input type="number" value="0" min="0" max="5">개 </label>
+					</li>
+                    <li>
+						<label><input type="checkbox">니카라과 마라카투라 (100g) </label>
+						<label><input type="number" value="0" min="0" max="5">개 </label>
+					</li>
+				</ul>
+			</fieldset>
+			<div class="centered">
+				<input type="submit" value="주문하기">
+				<input type="reset" value="다시 작성">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

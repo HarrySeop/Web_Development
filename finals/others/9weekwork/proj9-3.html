@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>박지섭_과제3</title>
+<style>
+*{                                      /* 태크 선택자 : 전체 페이지 선택 */
+    background-color: #fdf0e8;        /* 배경 색상 */
+}
+img{                                    /* 태그 선택자 */
+    width: 250px;                       /* 너비 */
+}
+.fontcolor{                             /* 클래스 선택자 */
+    color: #2d3d95;                   /* 글자 색상 */
+    font-size: 40px;                    /* 글자 크기 */
+}
+#main div{                              /* 하위 선택자 */
+    width: 550px;                       /* 너비 */
+    background-color: #f5beaa;        /* 배경 색상 */
+    color: white;                     /* 글자 색상 : 흰색 */
+    padding: 20px;                      /* 패딩 */
+    line-height: 200%;                  /* 줄 간격 */
+}
+#main div{                              /* 하위 선택자 */
+    margin-top:20px;                    /* 상단 마진 */
+}
+.fontcolor_bold{                        /* 클래스 선택자 */
+    color: #2d3d95;                   /* 글자 색상 */
+    background-color: #f5beaa;        /* 배경 색상 */
+    font-weight: bold;                  /* 글자 굵기 */
+}
+#homework{                              /* ID 선택자 */
+    position: fixed;                    /* 고정 위치시킵니다 */
+    bottom: 20px;                       /* 바닥에서 20px에 위치시킵니다 */
+    right: 20px;                        /* 오른쪽에서 20px 왼쪽으로 위치 시킵니다 */
+    background-color: red;            /* 배경 색상: 빨강 */
+    padding:10px 20px;                  /* 패딩 */
+    color: white;                     /* 글자 색상 : 흰색 */
+}
+</style>
+</head>
+<body>
+    <div id="main">
+        <img src="./img/말그릇.jpg" alt="말그릇 표지">
+        <h3><span class="fontcolor">01</span> 누구를 위한 책인가?</h3>
+        <div>
+            - 많은 말을 하지 않지만 꼭 필요한 말을 <span class="fontcolor_bold">조리 있게 하는</span> 사람이 되고싶은 분<br>
+            - 적절한 때에 입을 열고 <span class="fontcolor_bold">정확한 순간에 침묵할 줄 아는</span> 사람이 되고싶은 분<br>
+            - 말 한마디에서도 <span class="fontcolor_bold">품격이</span> 느껴지는 사람
+        </div>
+        <h3><span class="fontcolor">02</span> 이 책의 목차</h3>
+        <div>
+            - <span class="fontcolor_bold">말</span> 때문에 외로워 지는 사람들<br>
+            - 내면의 <span class="fontcolor_bold">말 그릇</span> 다듬기<br>
+            - <span class="fontcolor_bold">말 그릇</span>을 키우는 '듣기'의 기술<br>
+            - <span class="fontcolor_bold">말 그릇</span>이 깊어지는 '말하기' 기술<br>
+            - 사람 사이에 <span class="fontcolor_bold">'말'</span>이 있다.
+        </div>
+    </div>
+    <div id ="homework">성공회대학교 컴공,소프트 복전 202114154 박지섭</div>
+</body>
+</html>

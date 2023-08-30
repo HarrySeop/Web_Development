@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>웹폼_박지섭</title>
+	<meta charset="utf-8">
+	<link href="css/style.css" type="text/css" rel="stylesheet">	
+</head>
+
+<body>
+	<h1>IT융합자율학부</h1>
+	<h1>202114154</h1>
+	<h1>박지섭</h1>
+	<hr>   
+
+	<div id= "box">
+		<h1 id="application">프런트엔드 개발 지원서</h1>
+		<p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+		<hr>
+		<form>
+			<h4>개인 정보</h4>
+			<table id="Privacy">
+				<!--1번 열 즉 이름,연락처 부분에 너비를 50px 를 주고, 입력하는 부분인 2번 열은 너비를 120px 를 줬습니다.-->
+				<colgroup><col style="width: 50px;"><col style="width: 120px;"></colgroup>
+				<tr><td><label for="P_name"> 이름 </label></td><td><input type="text" id="P_name" autofocus placeholder="공백없이 입력하세요"></td></tr>
+				<tr><td><label for="P_tel"> 연락처 </label></td><td><input type="tel" id="P_tel" ></td></tr>
+			</table>
+			<h4>지원 분야</h4>
+			<div id="jobs">
+				<input type="radio" name="jobs"> 웹 퍼블리싱 <br>
+				<input type="radio" name="jobs"> 웹 애플리케이션 개발 <br>
+				<input type="radio" name="jobs"> 개발 환경 개선
+			</div>
+			<h4>지원동기</h4>
+			<label>
+				<textarea cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+			</label>
+			<div>
+				<input type="submit" value="접수하기"> <input type="reset" value="다시 쓰기">
+				<!--이미지 버튼을 추가해서 너비 100px 높이 30px 이미지 버튼을 10px 만큼 내려오게 하고 테두리를 둥글게 해줬습니다.
+				다만 이미지 버튼을 왼쪽과 같이 맞춰보고싶었는데 그건 실패했습니다..-->
+				<input type="image" src="img/image1.jpg" style="width: 100px; height: 30px; margin-top: 5px; border-radius: 5px;">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

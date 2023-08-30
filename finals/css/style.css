@@ -1,0 +1,298 @@
+    /* 초기 값 */
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        
+    }
+    a:link, a:visited{
+        text-decoration: none;
+        color : black;
+    }
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    /* navigation bar */
+    header{
+        background-color: #f6f5ee;
+        height: 85px;
+    }
+    header::after{
+        content:"";
+        display: block;
+        clear: both;
+    }
+    .head-logo{
+        position: absolute;
+        top:20px;
+        left:40px;
+        width:50px;
+        height:50px;
+    }
+    .head-menu-top{
+        position: absolute;
+        right: 30px;
+        top: 2px;
+    }
+    .top-btn{
+        list-style: none;
+        margin: 0;
+    }
+    ul.top-btn > li{
+        float: left;
+        color: #555;
+        font-size: 12px;    
+        margin-left: 20px;
+    }
+    ul.top-btn > li > a{
+        text-decoration: none;
+    }
+    ul.top-btn > li > a:hover{
+        text-decoration: underline;
+    }
+    .container-sub{
+        position: absolute;
+        top: 15px;
+        right: 5px;
+        /* height: 13px; */
+        border: solid 0px black;
+    }
+    .sub-btn{
+    list-style: none;
+    margin: 0;
+    }
+    ul.sub-btn > li{
+        float: left;
+        font-size: 20px;
+        margin: 20px;
+    }
+    ul.sub-btn > li > a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        height: 25px;
+    } 
+    ul.sub-btn > li > a:hover{
+        text-decoration: none; 
+        background-color: #2c2a29;
+        color: #669900;
+    }
+    .work_menu > li {
+        display: inline-block;
+        margin: 0px 8px;
+        text-decoration: none;
+        font-size: 15px;    
+        background-color: #9DBFAF;
+    }
+    .work_menu {
+        text-decoration: none;
+        height: 0;
+        overflow: hidden;
+    }
+    .sub-btn .select:hover {
+        background-color: #1E3932;
+        transition-duration: 0.5s;
+    }
+    .sub-btn .select:hover .work_menu {
+        height: 25px;   
+        transition-duration: 0.5s;
+    }
+
+    /* img */
+    .img-click{
+        /* 부모 값 만큼 width를 나눌 꺼라 선언 불필요 */
+        position: relative;
+        height: 260px;
+        /* background-color: #F6F6EE; */
+    }
+    .reserve{
+        width: 500px;
+        height: 250px;
+    }
+    .image-btn{
+        font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+        margin: 0 auto;
+        width: 500px;
+    }
+    .reserve-btn{
+        font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica;
+        float: left;
+        list-style: none;
+        position: relative;
+        width: 121px;
+        margin: -30px 0 0 190px;    
+        
+        border: 2px solid #222;
+        border-radius: 3px;
+        color: #222;
+        display: block;
+        font-size: 14px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+    }
+
+     .img-click::before{
+        content:"";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F6F6EE;
+    } 
+    .img-click .container{
+        /* 이렇게 함으로써 relative 한거를 absolute해서 처음부터 작성하는 것이다. */
+        position: relative;
+        color: black;
+    }
+
+    /* main content */
+    .main {
+        /* 부모 값 만큼 width를 나눌 꺼라 선언 불필요 */
+        position: relative;
+        height: 370px;
+        text-align: center;
+        background-color: cornflowerblue;
+    } 
+    .aside {
+        float: left;
+        width: 20%;
+        height: 370px;
+        background-color: #F2F8EA;
+        overflow: auto;
+    }
+    .side-title{
+        background-color: #007042;
+        border: 3px solid #007042;
+        border-radius: 5px;
+        outline: none;
+        color: white;
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    } 
+    .search{
+        width: 100%;
+        position: relative;
+        display: flex;
+    }
+    .searchTerm {
+        width: 100%;
+        border: 3px solid #007042;
+        border-right: none;
+        padding: 5px;
+        height: 36px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #9DBFAF;
+    }
+    .searchTerm:focus{
+        color: #007042;
+    }
+    .searchButton {
+        width: 40px;
+        height: 36px;
+        border: 1px solid #007042;
+        background: #007042;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .side-btn{
+        list-style-type: none;
+        margin: 0;
+    }
+    ul.side-btn > li {
+        border: 2px solid #007042;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    /* board */
+    .board{
+        float: right;
+        width: 80%;
+        height: 370px;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 40px; 
+        background-color: white;
+    }
+    .board .container{
+        display: grid;
+        grid-template-columns: repeat(3, 27%);
+	    grid-template-rows: repeat(2, 160px);
+    
+	    column-gap: 70px;
+	    row-gap: 30px;
+        overflow: auto;
+    }
+    .board article{
+        float:left;
+        width: 100px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .coffee-name{
+        width: 250px;
+    }
+    /* .card-img{
+        width: 200px;
+        height: 150px;
+    } */
+    .card-img .coffee{
+        padding-left: 50px;
+        width: 200px;
+        height: 130px;
+        transition-property: width, height;  /* 트랜지션 대상 - 너비, 높이 */
+        transition-duration: 2s, 1s;  /* 트랜지션 시간 - 2초, 1초 */
+    }
+    .card-img .coffee:hover{
+        width: 250px;
+        height: 160px;
+    }
+    /* float를 했기때문에 after를 해서 앞뒤 요소가 넘쳐 흐르는걸 막는다. */
+    .board::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .main::before{
+        content:"";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f6f6f6;
+    }
+    .main .container{
+        /* 이렇게 함으로써 relative 한거를 absolute해서 처음부터 작성하는 것이다. */
+        position: relative;
+        color: black;
+    }
+
+    /* footer */
+    .ft{
+        height: 58px;
+        /* padding-top: 10px; */
+        text-align: center;
+        background-color: #1E3932;
+        color: white;   
+        overflow: hidden;
+    }
+    .ft p{
+        padding-top: 5px;
+        
+    }
+
+ 
