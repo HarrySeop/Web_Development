@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a:link, a:visited{
+    text-decoration: none;
+    color : black;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* navigation bar */
+nav{
+    height: 80px;
+    background-color: #dc143c;
+    line-height: 80px;
+}
+/* float를 했기때문에 after를 해서 앞뒤 요소가 넘쳐 흐르는걸 막는다. */
+nav::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.nav-logo{
+    font-size: 30px;
+    float: left;
+    margin: 0;
+}
+.nav-menu{
+    float:right;
+}
+.nav-btn{
+    list-style-type: none;
+    margin: 0;
+}
+ul.nav-btn > li {
+    float: left;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* header */
+.hd{
+    /* 부모 값 만큼 width를 나눌 꺼라 선언 불필요 */
+    position: relative;
+    height: 400px;
+    text-align: center;
+}
+
+.hd-title{
+    font-size: 80px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 100px;
+}
+.hd-content{
+    font-size: 25px;
+}
+.hd::before{
+    content:"";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    /* 이게 없으면 글씨 위에 백그라운드 컬러가 덮어진다 */
+    background-color: burlywood;
+    /* 강의 에서는 백그라운드 이미지로 만들었음 */
+    /* background-image: url("./header-img.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; */
+}
+
+.hd .container{
+    /* 이렇게 함으로써 relative 한거를 absolute해서 처음부터 작성하는 것이다. */
+    position: relative;
+    color: black;
+}
+
+/* section */
+.sec{
+    text-align: center;
+    padding: 100px 0;
+    background-color: #eeeeee;
+}
+
+.sec article{
+    float:left;
+    width: 300px;
+    /* 최초의 960px에서 300px로 나눴습니다. */
+    margin-right: 30px;
+}
+/* 뭔가 덮어써야하는 속성은 아래에 작성해줘야한다.  */
+.sec article:last-child{
+/* 아티클 전체의 마지막 요소의 마진right를 주지않겠다. */
+    margin-right: 0;
+}
+.sec article img {
+    width: 100%;
+    height: auto;
+}
+.card-img{
+    overflow:hidden;
+    width: 300px;
+    height: 300px;
+}
+/* float를 했기때문에 after를 해서 앞뒤 요소가 넘쳐 흐르는걸 막는다. */
+.sec::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* footer */
+.ft{
+    padding: 15px;
+    text-align: center;
+    background-color: indianred;
+}
